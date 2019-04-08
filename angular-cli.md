@@ -20,6 +20,26 @@
   { path: 'heroes', component: HeroesComponent }
 ```
 
+### Paths
+
+```
+    "baseUrl": "src",
+    "paths": {
+      "@environments/*": ["environments/*"],
+      "@components/*": ["app/components/*"],
+      "@public/*": ["app/components/public/*"],
+      "@admin/*": ["app/components/admin/*"],
+      "@models/*": ["app/models/*"],
+      "@services/*": ["app/services/*"],
+      "@utilities/*": ["app/utilities/*"]
+    }
+ ```
+ 
+ ```
+import { DashboardComponent } from '@components/dashboard/dashboard.component';
+import { LoginComponent } from '@components/login/login.component';
+ ```
+
 ## Material Design
 
 ``` ng add @angular/material ```
