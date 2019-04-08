@@ -9,6 +9,17 @@
 
 ``` ng config schematics.@schematics/angular.component.spec false ```
 
+### Routing
+
+``` <router-outlet></router-outlet> ```
+
+``` 
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'detail/:id', component: HeroDetailComponent },
+  { path: 'heroes', component: HeroesComponent }
+```
+
 ## Material Design
 
 ``` ng add @angular/material ```
