@@ -41,8 +41,38 @@ import { LoginComponent } from '@components/login/login.component';
  ```
 
 ## Material Design
+### Step 1
 
-``` ng add @angular/material ```
+``` npm install --save @angular/material @angular/cdk @angular/animations ```
+
+### Step 2: Configure animations
+```
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+@NgModule({
+  ...
+  imports: [BrowserAnimationsModule],
+  ...
+})
+export class PizzaPartyAppModule { }
+```
+
+### Step 3: Import the component modules
+```
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+
+@NgModule({
+  ...
+  imports: [MatButtonModule, MatCheckboxModule],
+  ...
+})
+export class PizzaPartyAppModule { }
+```
+### Step 4: Include a theme
+
+```
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+```
 
 ## Fontawesome Icons
 
